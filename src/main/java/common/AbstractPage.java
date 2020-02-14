@@ -1,6 +1,8 @@
+package common;
+
 import org.openqa.selenium.WebDriver;
 
-public abstract class Page {
+public abstract class AbstractPage {
     protected WebDriver webDriver;
 
     /*
@@ -8,7 +10,7 @@ public abstract class Page {
      * @param webDriver
      */
 
-    public Page(WebDriver webDriver) {
+    public AbstractPage(WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 

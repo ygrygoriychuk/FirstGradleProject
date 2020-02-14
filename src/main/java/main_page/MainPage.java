@@ -1,10 +1,14 @@
+package main_page;
+
+import common.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import sport.SportPage;
 
-public class MainPage extends Page {
+public class MainPage extends AbstractPage {
 
     @FindBy(how = How.ID, using = "idcta-link")
     public WebElement btnSignIn;
